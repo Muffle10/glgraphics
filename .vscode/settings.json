@@ -1,0 +1,7 @@
+{
+  "cSpell.words": ["glfw", "Wwindow"],
+  "C_Cpp.errorSquiggles": "Disabled",
+  "files.associations": {
+    "__config": "c"
+  }
+}

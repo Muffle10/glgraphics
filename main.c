@@ -5,13 +5,14 @@
 int main(void)
 {
     GLFWwindow* window;
-
+    int width = 640;
+    int height = 480;
     /* Initialize the library */
     if (!glfwInit())
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(width, height, "Hello World", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -21,6 +22,7 @@ int main(void)
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
     gladLoadGL();
+    glViewport(0, 0, width, height);
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {

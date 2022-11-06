@@ -1,6 +1,6 @@
 all: main
 main: main.c
-	gcc main.c -o main `pkg-config --cflags --libs glfw3` -Iinclude/ -lglad -Llib/
+	gcc main.c -o main.o `pkg-config --cflags --libs glfw3` -Iinclude/ -lglad -Llib/
 
 compile: glad.c
 	gcc -c -o glad.o glad.c -Iinclude/

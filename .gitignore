@@ -1,5 +1,5 @@
 lib/
-main
+main.o
 # Prerequisites
 *.d
 
