@@ -20,7 +20,7 @@ int main(void)
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
-
+    gladLoadGL();
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
